@@ -9,7 +9,6 @@ for y in range(0, len(password_to_bruteforce) ):  #Password_To_BruteForce
         if (list_of_words_number[x] == password_to_bruteforce[y]):
             bruteforced_password = bruteforced_password + password_to_bruteforce[y]
             break
-        elif (list_of_words_number[x] != password_to_bruteforce[y]):
-            print("Incorrect password !")
-            print("Trying password: {}".format(list_of_words_number[x]))
+        else:
+          print("Sorry, The Program Was Not Able To Brute-Force The Password You Entered ")
 print("Bruteforced password: {}".format(bruteforced_password))
